@@ -3,11 +3,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class TSP {
-    Stack<Integer> stack;
-
-    public TSP() {
-        stack = new Stack<Integer>();
-    }
+    
     int findLowest(int distance_matrix[][], int current_element, int Visited[]){
         int no_of_nodes= (distance_matrix[1].length - 1), node_value,min_node=-1;
         //we would inialize min as the highest Integer possible as every integer would be smaller than the max integer and thus would make easy in comparision
